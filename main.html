@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backpack Advisor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .page {
+            display: none;
+        }
+        .page.active {
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="text-2xl font-bold text-gray-900">Backpack Advisor</a>
+            <div>
+                <a href="#home" class="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                <a href="#travel" class="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Travel</a>
+                <a href="#hiking" class="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Hiking</a>
+                <a href="#everyday" class="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Everyday Carry</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-6 py-8">
+        <!-- Home Page -->
+        <div id="home" class="page active">
+            <header class="text-center mb-12">
+                <h1 class="text-5xl font-bold text-gray-900 mb-4">Find Your Perfect Backpack</h1>
+                <p class="text-xl text-gray-600">In-depth reviews and guides to help you choose the best backpack for your adventures.</p>
+            </header>
+
+            <section>
+                <h2 class="text-3xl font-bold mb-6 text-center">Featured Reviews</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Featured Item 1 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="https://placehold.co/600x400/a0aec0/ffffff?text=Osprey+Farpoint+40" alt="Osprey Farpoint 40" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl mb-2">Osprey Farpoint 40</h3>
+                            <p class="text-gray-700 text-base mb-4">The ultimate travel companion, balancing comfort and capacity perfectly for one-bag travel.</p>
+                            <a href="#osprey-farpoint-40" class="text-indigo-600 hover:text-indigo-800 font-semibold">Read Review &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- Featured Item 2 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="https://placehold.co/600x400/9f7aea/ffffff?text=Nomatic+Travel+Pack" alt="Nomatic Travel Pack" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl mb-2">Nomatic Travel Pack</h3>
+                            <p class="text-gray-700 text-base mb-4">Sleek design meets incredible organization. Ideal for the digital nomad and frequent flyer.</p>
+                            <a href="#nomatic-travel-pack" class="text-indigo-600 hover:text-indigo-800 font-semibold">Read Review &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- Featured Item 3 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="https://placehold.co/600x400/48bb78/ffffff?text=Peak+Design+Everyday" alt="Peak Design Everyday Backpack" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl mb-2">Peak Design Everyday Backpack V2</h3>
+                            <p class="text-gray-700 text-base mb-4">A photographer's dream that excels as a daily driver with its innovative access and dividers.</p>
+                            <a href="#peak-design-everyday-v2" class="text-indigo-600 hover:text-indigo-800 font-semibold">Read Review &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Travel Backpacks Page -->
+        <div id="travel" class="page">
+            <header class="text-center mb-12">
+                <h1 class="text-4xl font-bold text-gray-900">Travel Backpacks</h1>
+                <p class="text-lg text-gray-600">Carry-on compliant bags designed for seamless journeys.</p>
+            </header>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://placehold.co/600x400/a0aec0/ffffff?text=Osprey+Farpoint+40" alt="Osprey Farpoint 40" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Osprey Farpoint 40</h3>
+                        <a href="#osprey-farpoint-40" class="text-indigo-600 hover:text-indigo-800 font-semibold">View Details &rarr;</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://placehold.co/600x400/9f7aea/ffffff?text=Nomatic+Travel+Pack" alt="Nomatic Travel Pack" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Nomatic Travel Pack</h3>
+                        <a href="#nomatic-travel-pack" class="text-indigo-600 hover:text-indigo-800 font-semibold">View Details &rarr;</a>
+                    </div>
+                </div>
+                 <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://placehold.co/600x400/ed8936/ffffff?text=Cotopaxi+Allpa+35L" alt="Cotopaxi Allpa 35L" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Cotopaxi Allpa 35L</h3>
+                        <a href="#cotopaxi-allpa-35l" class="text-indigo-600 hover:text-indigo-800 font-semibold">View Details &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Hiking Backpacks Page -->
+        <div id="hiking" class="page">
+            <header class="text-center mb-12">
+                <h1 class="text-4xl font-bold text-gray-900">Hiking Backpacks</h1>
+                <p class="text-lg text-gray-600">Durable and comfortable packs for the trail.</p>
+            </header>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://placehold.co/600x400/4299e1/ffffff?text=Osprey+Atmos+AG+65" alt="Osprey Atmos AG 65" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Osprey Atmos AG 65</h3>
+                        <a href="#osprey-atmos-ag-65" class="text-indigo-600 hover:text-indigo-800 font-semibold">View Details &rarr;</a>
+                    </div>
+                </div>
+                 <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://placehold.co/600x400/f56565/ffffff?text=Gregory+Baltoro+75" alt="Gregory Baltoro 75" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Gregory Baltoro 75</h3>
+                        <a href="#gregory-baltoro-75" class="text-indigo-600 hover:text-indigo-800 font-semibold">View Details &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Everyday Carry Backpacks Page -->
+        <div id="everyday" class="page">
+            <header class="text-center mb-12">
+                <h1 class="text-4xl font-bold text-gray-900">Everyday Carry Backpacks</h1>
+                <p class="text-lg text-gray-600">Versatile bags for your daily essentials.</p>
+            </header>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                 <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://placehold.co/600x400/48bb78/ffffff?text=Peak+Design+Everyday" alt="Peak Design Everyday Backpack" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Peak Design Everyday Backpack V2</h3>
+                        <a href="#peak-design-everyday-v2" class="text-indigo-600 hover:text-indigo-800 font-semibold">View Details &rarr;</a>
+                    </div>
+                </div>
+                 <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://placehold.co/600x400/38b2ac/ffffff?text=The+North+Face+Recon" alt="The North Face Recon" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">The North Face Recon</h3>
+                        <a href="#north-face-recon" class="text-indigo-600 hover:text-indigo-800 font-semibold">View Details &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Individual Review Pages -->
+        <div id="osprey-farpoint-40" class="page">
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+                <img src="https://placehold.co/800x400/a0aec0/ffffff?text=Osprey+Farpoint+40" alt="Osprey Farpoint 40" class="w-full h-64 object-cover rounded-md mb-8">
+                <h1 class="text-4xl font-bold mb-4">Osprey Farpoint 40 Review</h1>
+                <p class="mb-6 text-gray-600">The Osprey Farpoint 40 has long been a favorite among travelers for its smart design, comfortable carry, and carry-on convenience. It's a pack that promises to be your go-to for weekend getaways and international adventures alike.</p>
+                
+                <div class="prose max-w-none">
+                    <h2 class="text-2xl font-semibold mb-3">Key Features</h2>
+                    <ul>
+                        <li>Stowaway harness and hipbelt for easy checking</li>
+                        <li>Large panel zip access to main compartment</li>
+                        <li>Lockable sliders on main compartment zipper</li>
+                        <li>Padded laptop and tablet sleeve</li>
+                    </ul>
+
+                    <h2 class="text-2xl font-semibold mb-3 mt-6">Our Verdict</h2>
+                    <p>After extensive testing, we can confidently say the Farpoint 40 lives up to the hype. The suspension system is surprisingly robust for a travel pack, making it comfortable to carry even when fully loaded. The clamshell opening is a game-changer for organization, allowing you to pack and unpack like a suitcase. While it may not have the sleek, urban aesthetic of some competitors, its practicality and durability are unmatched.</p>
+                </div>
+
+                <div class="mt-8 p-6 bg-indigo-50 rounded-lg">
+                     <h3 class="text-xl font-bold text-gray-900">Final Score: 9.2/10</h3>
+                     <p class="mt-2 text-gray-700">An outstanding choice for almost any traveler. It combines the best features of a backpack and a suitcase into one durable, comfortable package.</p>
+                     <a href="https://www.amazon.com/dp/B08P54742D/?tag=nuo-20" target="_blank" rel="noopener noreferrer" class="mt-4 inline-block bg-indigo-600 text-white font-bold py-2 px-4 rounded hover:bg-indigo-700">Check Price on Amazon</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="nomatic-travel-pack" class="page">
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+                <img src="https://placehold.co/800x400/9f7aea/ffffff?text=Nomatic+Travel+Pack" alt="Nomatic Travel Pack" class="w-full h-64 object-cover rounded-md mb-8">
+                <h1 class="text-4xl font-bold mb-4">Nomatic Travel Pack Review</h1>
+                <p class="mb-6 text-gray-600">The Nomatic Travel Pack is engineered for the modern traveler. With a sleek, minimalist design and a pocket for everything, it aims to be the only bag you'll ever need for short trips.</p>
+                
+                <div class="prose max-w-none">
+                    <h2 class="text-2xl font-semibold mb-3">Key Features</h2>
+                    <ul>
+                        <li>Expands from 20L to 30L</li>
+                        <li>Durable, water-resistant materials</li>
+                        <li>Over 20 innovative features for organization</li>
+                        <li>TSA-ready laptop compartment</li>
+                    </ul>
+
+                    <h2 class="text-2xl font-semibold mb-3 mt-6">Our Verdict</h2>
+                    <p>The Nomatic Travel Pack is an organizer's dream. Every item has its place, from your laptop and tablet to your sunglasses and water bottle. The expansion feature is incredibly useful, providing flexibility for different trip lengths. The materials feel premium and durable. However, the structured design can feel a bit rigid, and the sheer number of pockets can be overwhelming for minimalists.</p>
+                </div>
+
+                <div class="mt-8 p-6 bg-purple-50 rounded-lg">
+                     <h3 class="text-xl font-bold text-gray-900">Final Score: 8.8/10</h3>
+                     <p class="mt-2 text-gray-700">If you value organization above all else, this is the pack for you. It's a brilliantly designed bag that makes travel effortless for the tech-savvy professional.</p>
+                     <a href="https://www.amazon.com/dp/B0787L3B4J/?tag=nuo-20" target="_blank" rel="noopener noreferrer" class="mt-4 inline-block bg-purple-600 text-white font-bold py-2 px-4 rounded hover:bg-purple-700">Check Price on Amazon</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="peak-design-everyday-v2" class="page">
+             <div class="bg-white p-8 rounded-lg shadow-lg">
+                <img src="https://placehold.co/800x400/48bb78/ffffff?text=Peak+Design+Everyday+V2" alt="Peak Design Everyday V2" class="w-full h-64 object-cover rounded-md mb-8">
+                <h1 class="text-4xl font-bold mb-4">Peak Design Everyday Backpack V2 Review</h1>
+                <p class="mb-6 text-gray-600">The Peak Design Everyday Backpack V2 is a masterclass in design and functionality. Originally conceived for photographers, its versatility has made it a favorite for daily commuters, creatives, and tech enthusiasts.</p>
+                
+                <div class="prose max-w-none">
+                    <h2 class="text-2xl font-semibold mb-3">Key Features</h2>
+                    <ul>
+                        <li>Dual side access via weatherproof zippers</li>
+                        <li>FlexFold dividers for customizable organization</li>
+                        <li>MagLatch hardware for secure, one-handed access</li>
+                        <li>100% recycled 400D nylon canvas shell</li>
+                    </ul>
+
+                    <h2 class="text-2xl font-semibold mb-3 mt-6">Our Verdict</h2>
+                    <p>The Everyday Backpack V2 is simply stunning. The attention to detail is evident in every stitch and feature. The side access panels are revolutionary, and the FlexFold dividers allow for unparalleled customization. It's comfortable, stylish, and built to last. The only downside is the premium price tag, but for those who demand the best, it's worth every penny.</p>
+                </div>
+
+                <div class="mt-8 p-6 bg-green-50 rounded-lg">
+                     <h3 class="text-xl font-bold text-gray-900">Final Score: 9.5/10</h3>
+                     <p class="mt-2 text-gray-700">An exceptional backpack that excels in every category. It's an investment, but one that will pay dividends in usability and style for years to come.</p>
+                     <a href="https://www.amazon.com/dp/B0892B7W7G/?tag=nuo-20" target="_blank" rel="noopener noreferrer" class="mt-4 inline-block bg-green-600 text-white font-bold py-2 px-4 rounded hover:bg-green-700">Check Price on Amazon</a>
+                </div>
+            </div>
+        </div>
+        
+        <div id="cotopaxi-allpa-35l" class="page">
+             <div class="bg-white p-8 rounded-lg shadow-lg">
+                <img src="https://placehold.co/800x400/ed8936/ffffff?text=Cotopaxi+Allpa+35L" alt="Cotopaxi Allpa 35L" class="w-full h-64 object-cover rounded-md mb-8">
+                <h1 class="text-4xl font-bold mb-4">Cotopaxi Allpa 35L Review</h1>
+                <p class="mb-6 text-gray-600">The Cotopaxi Allpa 35L stands out with its vibrant colors and robust, travel-ready design. It's a suitcase-style backpack that's built to withstand the rigors of the road while keeping your gear organized and secure.</p>
+                
+                <div class="prose max-w-none">
+                    <h2 class="text-2xl font-semibold mb-3">Key Features</h2>
+                    <ul>
+                        <li>Tough, TPU-coated 1000D polyester shell</li>
+                        <li>Full-wrap zipper for suitcase-style opening</li>
+                        <li>Internal mesh compartments for organization</li>
+                        <li>Included rain cover</li>
+                    </ul>
+
+                    <h2 class="text-2xl font-semibold mb-3 mt-6">Our Verdict</h2>
+                    <p>The Allpa 35L is a workhorse. The materials are incredibly durable, and the suitcase-style opening with internal mesh dividers makes packing a breeze. The harness system is comfortable and can be stowed away for flights. Its unique, colorful aesthetic isn't for everyone, but its performance is undeniable. It's a fantastic, no-fuss travel pack.</p>
+                </div>
+
+                <div class="mt-8 p-6 bg-orange-50 rounded-lg">
+                     <h3 class="text-xl font-bold text-gray-900">Final Score: 9.0/10</h3>
+                     <p class="mt-2 text-gray-700">A fun, functional, and incredibly durable travel pack that makes one-bag travel easy and stylish. A top contender in the travel category.</p>
+                     <a href="https://www.amazon.com/dp/B0842J2L2B/?tag=nuo-20" target="_blank" rel="noopener noreferrer" class="mt-4 inline-block bg-orange-500 text-white font-bold py-2 px-4 rounded hover:bg-orange-600">Check Price on Amazon</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="osprey-atmos-ag-65" class="page">
+             <div class="bg-white p-8 rounded-lg shadow-lg">
+                <img src="https://placehold.co/800x400/4299e1/ffffff?text=Osprey+Atmos+AG+65" alt="Osprey Atmos AG 65" class="w-full h-64 object-cover rounded-md mb-8">
+                <h1 class="text-4xl font-bold mb-4">Osprey Atmos AG 65 Review</h1>
+                <p class="mb-6 text-gray-600">The Osprey Atmos AG 65 is legendary in the hiking community for its Anti-Gravity (AG) suspension system, which provides unparalleled comfort and ventilation on the trail.</p>
+                
+                <div class="prose max-w-none">
+                    <h2 class="text-2xl font-semibold mb-3">Key Features</h2>
+                    <ul>
+                        <li>Anti-Gravity suspension system</li>
+                        <li>Fit-on-the-Fly adjustable hipbelt</li>
+                        <li>Floating top lid with dual zippered pockets</li>
+                        <li>Internal hydration reservoir sleeve</li>
+                    </ul>
+
+                    <h2 class="text-2xl font-semibold mb-3 mt-6">Our Verdict</h2>
+                    <p>Carrying the Atmos AG 65 feels like the pack is hugging you. The AG suspension distributes weight so effectively that heavy loads feel lighter. Ventilation is superb, minimizing back sweat on hot days. It's packed with thoughtful features for hikers, like trekking pole attachments and multiple access points. It's a bit heavier than ultralight options, but the comfort is worth the extra ounces.</p>
+                </div>
+
+                <div class="mt-8 p-6 bg-blue-50 rounded-lg">
+                     <h3 class="text-xl font-bold text-gray-900">Final Score: 9.4/10</h3>
+                     <p class="mt-2 text-gray-700">The benchmark for comfort in multi-day hiking packs. If you prioritize a comfortable carry over absolute minimal weight, this is the pack to get.</p>
+                     <a href="https://www.amazon.com/dp/B08P569J39/?tag=nuo-20" target="_blank" rel="noopener noreferrer" class="mt-4 inline-block bg-blue-600 text-white font-bold py-2 px-4 rounded hover:bg-blue-700">Check Price on Amazon</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="gregory-baltoro-75" class="page">
+             <div class="bg-white p-8 rounded-lg shadow-lg">
+                <img src="https://placehold.co/800x400/f56565/ffffff?text=Gregory+Baltoro+75" alt="Gregory Baltoro 75" class="w-full h-64 object-cover rounded-md mb-8">
+                <h1 class="text-4xl font-bold mb-4">Gregory Baltoro 75 Review</h1>
+                <p class="mb-6 text-gray-600">The Gregory Baltoro 75 is a premium backpacking pack designed to comfortably haul heavy loads for extended trips. Its dynamic suspension and feature-rich design make it a favorite for serious backpackers.</p>
+                
+                <div class="prose max-w-none">
+                    <h2 class="text-2xl font-semibold mb-3">Key Features</h2>
+                    <ul>
+                        <li>Response A3 Suspension with auto-angle-adjust harness</li>
+                        <li>Included SideKick pack (daypack/hydration sleeve)</li>
+                        <li>WeatherShield TPU-coated hipbelt pocket</li>
+                        <li>U-Zip front access to main compartment</li>
+                    </ul>
+
+                    <h2 class="text-2xl font-semibold mb-3 mt-6">Our Verdict</h2>
+                    <p>The Baltoro 75 is a beast when it comes to carrying capacity and comfort. The suspension pivots with your body, providing a stable and comfortable ride even on uneven terrain. The organization is top-notch, with pockets and access points exactly where you need them. The included SideKick daypack is a fantastic bonus. It's a heavy pack, but for long expeditions where you need to carry a lot of gear, it's one of the best.</p>
+                </div>
+
+                <div class="mt-8 p-6 bg-red-50 rounded-lg">
+                     <h3 class="text-xl font-bold text-gray-900">Final Score: 9.3/10</h3>
+                     <p class="mt-2 text-gray-700">A top-tier pack for heavy-duty backpacking. Its comfort and features justify the weight and price for those who need to carry serious loads.</p>
+                     <a href="https://www.amazon.com/dp/B09Q3Y5G5L/?tag=nuo-20" target="_blank" rel="noopener noreferrer" class="mt-4 inline-block bg-red-600 text-white font-bold py-2 px-4 rounded hover:bg-red-700">Check Price on Amazon</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="north-face-recon" class="page">
+             <div class="bg-white p-8 rounded-lg shadow-lg">
+                <img src="https://placehold.co/800x400/38b2ac/ffffff?text=The+North+Face+Recon" alt="The North Face Recon" class="w-full h-64 object-cover rounded-md mb-8">
+                <h1 class="text-4xl font-bold mb-4">The North Face Recon Review</h1>
+                <p class="mb-6 text-gray-600">A classic for a reason, The North Face Recon is a versatile daypack that's equally at home on campus, in the office, or on a day hike. It offers excellent organization and a comfortable carry.</p>
+                
+                <div class="prose max-w-none">
+                    <h2 class="text-2xl font-semibold mb-3">Key Features</h2>
+                    <ul>
+                        <li>FlexVent suspension system with padded back panel</li>
+                        <li>Dedicated, protective laptop compartment</li>
+                        <li>Large main compartment for books and binders</li>
+                        <li>Front compartment with extensive organization</li>
+                    </ul>
+
+                    <h2 class="text-2xl font-semibold mb-3 mt-6">Our Verdict</h2>
+                    <p>The Recon is a do-it-all daily driver. The organization in the front pocket is fantastic for keeping small items in check. The laptop compartment is well-padded and protective. The FlexVent suspension is comfortable for all-day wear, even with a heavy load of books and electronics. It's a reliable, well-built backpack that will serve you well for years.</p>
+                </div>
+
+                <div class="mt-8 p-6 bg-teal-50 rounded-lg">
+                     <h3 class="text-xl font-bold text-gray-900">Final Score: 8.9/10</h3>
+                     <p class="mt-2 text-gray-700">A superb choice for students and professionals looking for a durable, organized, and comfortable everyday backpack.</p>
+                     <a href="https://www.amazon.com/dp/B08V881W3K/?tag=nuo-20" target="_blank" rel="noopener noreferrer" class="mt-4 inline-block bg-teal-600 text-white font-bold py-2 px-4 rounded hover:bg-teal-700">Check Price on Amazon</a>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="bg-white mt-12">
+        <div class="container mx-auto px-6 py-4 text-center text-gray-600">
+            <p>&copy; 2025 Backpack Advisor. All Rights Reserved.</p>
+            <p class="text-sm mt-1">As an Amazon Associate, we earn from qualifying purchases.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const pages = document.querySelectorAll('.page');
+            const navLinks = document.querySelectorAll('nav a, a[href^="#"]');
+
+            function showPage(pageId) {
+                pages.forEach(page => {
+                    if (page.id === pageId) {
+                        page.classList.add('active');
+                    } else {
+                        page.classList.remove('active');
+                    }
+                });
+                window.scrollTo(0, 0);
+            }
+
+            function handleNav(event) {
+                const href = event.currentTarget.getAttribute('href');
+                if (href && href.startsWith('#')) {
+                    event.preventDefault();
+                    const pageId = href.substring(1);
+                    history.pushState({pageId}, null, `#${pageId}`);
+                    showPage(pageId);
+                }
+            }
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', handleNav);
+            });
+
+            window.addEventListener('popstate', (event) => {
+                const pageId = event.state ? event.state.pageId : 'home';
+                showPage(pageId);
+            });
+
+            // Initial page load
+            const initialPageId = window.location.hash ? window.location.hash.substring(1) : 'home';
+            showPage(initialPageId);
+             // Add a fallback for invalid hashes
+            if (!document.getElementById(initialPageId)) {
+                showPage('home');
+            }
+        });
+    </script>
+</body>
+</html>
